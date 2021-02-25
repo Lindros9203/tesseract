@@ -292,12 +292,6 @@ int os_detect_blobs(const std::vector<int>* allowed_scripts,
   // tprintf("Number of blobs post-filtering = %d\n", filtered_it.length());
   // tprintf("Number of blobs to try = %d\n", real_max);
 
-  // If there are too few characters, skip this page entirely.
-  if (real_max < minCharactersToTry / 2) {
-    tprintf("Too few characters. Skipping this page\n");
-    return 0;
-  }
-
   auto** blobs = new BLOBNBOX*[filtered_it.length()];
   int number_of_blobs = 0;
   for (filtered_it.mark_cycle_pt (); !filtered_it.cycled_list ();
