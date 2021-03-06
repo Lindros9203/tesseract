@@ -2,6 +2,8 @@
 
 https://tesseract-ocr.github.io/tessdoc/Compiling
 
+Kód je upraven tak, aby nevyžadoval minimální počet znaků při detekci otočení textu
+
 ## About
 
 This package contains an **OCR engine** - `libtesseract` and a **command line program** - `tesseract`.
